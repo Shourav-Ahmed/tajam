@@ -1,0 +1,366 @@
+@media (max-width: 575.98px) {  
+
+    
+.menubar img{
+    width: 95px;
+}
+.navbar-nav {
+    background-image: linear-gradient( to right, #311d5e, #09052f);
+}    
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+	text-align: center;
+}
+
+.svg-inline--fa {
+	display: inline-block;
+	font-size: 20px;
+	height: 1em;
+	overflow: visible;
+	vertical-align: -.125em;
+	color: #fff;
+}
+.svg-inline--fa:hover{
+    color: #00e0d0;    
+}
+    
+#Banner {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.banner-text h3{
+    font-size: 30px;    
+}
+.banner-text p {
+    font-size: 14px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+#about {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.about-text h4 {
+	padding-top: 30px;
+    text-align: center;
+}
+.about-text a {
+	
+	margin-left: 0px;
+}
+.video-part {
+	padding-top: 140px;
+	padding-bottom: 190px;
+}
+.video-icon i {
+	font-size: 60px;
+}
+#expertise {
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
+.ex-item {
+	padding-top: 30px;
+}
+#team {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#work {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+#peoplesay {
+	padding-top: 60px;
+	padding-bottom: 35px;
+}
+.p-img {
+	padding-bottom: 20px;
+	padding-left: 136px;
+}
+.peoplesay-text p {
+	letter-spacing: 0.2px;
+}
+    .form-design{
+        text-align: center;
+    }    
+.form-design h4 {
+	padding-bottom: 25px;
+}
+form [type="Name"] {
+	width: 270px;
+	height: 35px;
+}
+form [type="email"] {
+	width: 270px;
+	height: 35px;
+}
+form [type="subject"] {
+	width: 270px;
+	height: 35px;
+}
+.form-design textarea {
+	width: 270px;
+	height: 120px;
+}
+
+.slick-slide img {
+	display: block;
+	padding-left: 0px;
+}
+.client h4 {
+    text-align: center;
+	padding-bottom: 35px;
+	padding-top: 30px;
+}
+.client-img {
+	padding-bottom: 27px;
+	text-align: center;
+    
+}
+.client-img:hover{
+    transform: translateX(-15%);
+}
+#footer {
+	padding-top: 35px;
+    padding-bottom: 35px;
+}
+.footer-left img {
+	width: 100px;
+	height: 40px;
+}
+form [type="subscribe"] {
+	width: 216px;
+	height: 35px;
+}
+.ftl-img{
+    text-align: center;
+}
+.sub-btn i {
+	font-size: 20px;
+}
+.sub-btn {
+	padding: 2px 18px;
+}
+.help {
+	text-align: center;
+}
+.copyright-right h5 {
+	padding-top: 25px;
+}
+a {
+    font-size: 13px; 
+}   
+    
+}
+
+
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+.menubar img {
+	width: 110px;
+}
+.navbar-nav {
+    background-image: linear-gradient( to right, #311d5e, #09052f);
+}    
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	text-align: center;
+}
+.svg-inline--fa {
+	display: inline-block;
+	font-size: 20px;
+	height: 1em;
+	overflow: visible;
+	vertical-align: -.125em;
+	color: #fff;
+}
+.svg-inline--fa:hover{
+    color: #00e0d0;    
+}
+#Banner {
+	padding-top: 170px;
+	padding-bottom: 160px;
+}  
+#about {
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.about-text h4 {
+	padding-bottom: 18px;
+	text-align: center;
+	padding-top: 20px;
+}
+.about-text h5 {
+    padding-bottom: 0;
+	text-align: center;
+}
+.about-text p {
+	padding-bottom: 15px;
+	text-align: center;
+}
+.video-part {
+	padding-top: 150px;
+	padding-bottom: 200px;
+}
+.video-icon i {
+	font-size: 70px;
+}
+#expertise {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.ex-item {
+	padding-top: 20px;
+}
+#team {
+	padding-top: 35px;
+	padding-bottom: 45px;
+}
+a {
+	font-size: 14px;
+}
+#work {
+	padding-top: 35px;
+	padding-bottom: 45px;
+}
+#contact {
+	padding-top: 35px;
+	padding-bottom: 45px;
+}
+#footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.client h4 {
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+form [type="subscribe"] {
+	width: 380px;
+}
+help {
+	text-align: center;
+}
+.copyright-right h5 {
+	padding-top: 15px;
+}   
+    
+}
+
+
+/*================ medium device ====================*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+.menubar img{
+    width: 120px;
+} 
+.navbar-expand-md .navbar-nav .nav-link {
+	text-align: center;
+}
+#Banner {
+	padding-top: 190px;
+	padding-bottom: 190px;
+}
+    
+#expertise {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+#team {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.team-bottom {
+	padding-top: 35px;
+}
+#work {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+a {
+    font-size: 13px; 
+}
+#peoplesay {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.p-img {
+	padding-bottom: 25px;
+}
+.work-btn {
+	padding-top: 30px;
+}
+form [type="Name"] {
+	width: 280px;
+	height: 35px;
+}
+form [type="email"] {
+	width: 280px;
+	height: 35px;
+}
+form [type="subject"] {
+	width: 280px;
+	height: 35px;
+}
+.form-design textarea{
+    width: 280px;
+	height: 165px;
+}
+#contact {
+	padding-top: 45px;
+	padding-bottom: 0px;
+}
+#footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+form [type="subscribe"] {
+	width: 251px;
+	height: 43px;
+}    
+}
+
+
+/*============== large Device ====================*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+a {
+	font-size: 7px;
+}
+form [type="subscribe"] {
+	width: 185px;
+}
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

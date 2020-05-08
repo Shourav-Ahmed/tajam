@@ -1,0 +1,1216 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*-----------Common Css end----------*/
+/*-----------preloader css start -------*/
+/*-------------------------
+    Preloader Css
+---------------------------*/
+.preloader-inner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-background-image: -webkit-linear-gradient(35deg, #342a56, #231845);
+  -moz-background-image: linear-gradient(55deg, #342a56, #231845);
+  background-image: -o-linear-gradient(35deg, #342a56, #231845);
+  background-image: linear-gradient(55deg, #342a56, #231845);
+  justify-content: center; }
+  .preloader-inner .cancel-preloader {
+    position: absolute;
+    bottom: 30px;
+    right: 30px; }
+    .preloader-inner .cancel-preloader a {
+      background-color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #9191ff;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 30px;
+      display: block;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in; }
+      .preloader-inner .cancel-preloader a:hover {
+        background-color: #00aeff;
+        color: #00e0d0; }
+
+.cube-folding {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-size: 0; }
+
+.cube-folding span {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  display: inline-block; }
+
+.cube-folding span::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -moz-animation: folding 2.5s infinite linear both;
+  -webkit-animation: folding 2.5s infinite linear both;
+  animation: folding 2.5s infinite linear both; }
+
+.cube-folding .leaf2 {
+  -moz-transform: rotateZ(90deg) scale(1.1);
+  -ms-transform: rotateZ(90deg) scale(1.1);
+  -webkit-transform: rotateZ(90deg) scale(1.1);
+  transform: rotateZ(90deg) scale(1.1); }
+
+.cube-folding .leaf2::before {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: #f2f2f2; }
+
+.cube-folding .leaf3 {
+  -moz-transform: rotateZ(270deg) scale(1.1);
+  -ms-transform: rotateZ(270deg) scale(1.1);
+  -webkit-transform: rotateZ(270deg) scale(1.1);
+  transform: rotateZ(270deg) scale(1.1); }
+
+.cube-folding .leaf3::before {
+  -moz-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  background-color: #f2f2f2; }
+
+.cube-folding .leaf4 {
+  -moz-transform: rotateZ(180deg) scale(1.1);
+  -ms-transform: rotateZ(180deg) scale(1.1);
+  -webkit-transform: rotateZ(180deg) scale(1.1);
+  transform: rotateZ(180deg) scale(1.1); }
+
+.cube-folding .leaf4::before {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: #e6e6e6; }
+
+@-moz-keyframes folding {
+  0%, 10% {
+    -moz-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -moz-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -moz-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+
+@-webkit-keyframes folding {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+
+@keyframes folding {
+  0%, 10% {
+    -moz-transform: perspective(140px) rotateX(-180deg);
+    -ms-transform: perspective(140px) rotateX(-180deg);
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; }
+  25%, 75% {
+    -moz-transform: perspective(140px) rotateX(0deg);
+    -ms-transform: perspective(140px) rotateX(0deg);
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform: perspective(140px) rotateX(0deg);
+    opacity: 1; }
+  90%, 100% {
+    -moz-transform: perspective(140px) rotateY(180deg);
+    -ms-transform: perspective(140px) rotateY(180deg);
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0; } }
+
+.cube-wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
+
+.cube-wrapper .loading {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  display: block;
+  color: white;
+  position: relative;
+  top: 25px;
+  z-index: 2;
+  -moz-animation: text 0.5s ease infinite alternate;
+  -webkit-animation: text 0.5s ease infinite alternate;
+  animation: text 0.5s ease infinite alternate;
+  text-transform: uppercase; }
+
+@-moz-keyframes text {
+  100% {
+    top: 35px; } }
+
+@-webkit-keyframes text {
+  100% {
+    top: 35px; } }
+
+@keyframes text {
+  100% {
+    top: 35px; } }
+
+@-moz-keyframes shadow {
+  100% {
+    bottom: -18px;
+    width: 100px; } }
+
+@-webkit-keyframes shadow {
+  100% {
+    bottom: -18px;
+    width: 100px; } }
+
+@keyframes shadow {
+  100% {
+    bottom: -18px;
+    width: 100px; } }
+
+.navigation.innerpage {
+  background: #fff;
+  border-bottom: 0px; }
+
+.loading img{
+    width: 100px;
+}
+.loading h3{
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 14px;
+    color: #00e0d0;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+
+
+
+/*-----------preloader Css end----------*/
+/*-----------Navbar css start----------*/
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: #00e0d0;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #00e0d0;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #00e0d0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.navbar {
+	padding: 20px 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all linear .3s;
+}
+.navbg{
+    position: sticky;
+    background-image: linear-gradient( to right, #311d5e, #09052f);
+    padding: 10px 1rem;
+    animation: bg 1s;
+}
+@keyframes bg{
+    from{top:-100px}
+    to{top: 0}
+}
+
+
+.navbar-toggler i{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*----------- Navbar Css End -----------*/
+/*----------- Banner Css start -----------*/
+#Banner{
+    background: url(../Images/Banner.jpg);
+    padding-top: 228px;
+    padding-bottom: 222px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#Banner:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#311d5e, #09052f);
+    opacity: 0.9;
+}
+.banner-slick{
+    position: relative;
+    z-index: 999;
+}
+.banner-text h3{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+}
+.banner-text h3:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 1px;
+    left: 50%;
+    bottom: -27px;
+    background: #00e0d0;
+    transform: translate(-50%);
+}
+.banner-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    padding-top: 50px;
+    padding-bottom: 43px;
+}
+.banner-link{
+    position: relative;
+    z-index: 999;
+}
+.banner-link a{
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00e0d0;
+    padding: 10px 14px;
+    border: 1px solid #00e0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.banner-link a:hover{
+    color: #311d5e;
+    background: #fff;
+    border: none;
+}
+
+/*----------------------------slick dots start---------------*/
+.slick-dots {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+.slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.slick-dots li button {
+    width: 9px;
+    height: 9px;
+    color: transparent;
+    background: #00e0d0;
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+}
+/*----------------------------slick dots end-----------------*/
+/*----------- Banner Css End -----------*/
+/*----------- About Css start -----------*/
+#about{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.about-img{
+    
+}
+.about-text{
+    
+}
+.about-text h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #413d4b;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    letter-spacing: 1.5px;
+}
+.about-text h5{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    padding-bottom: 20px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+}
+.about-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    padding-bottom: 30px;
+    
+}
+.about-text a{
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00e0d0;
+    padding: 11px 15px;
+    border: 1px solid #00e0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.about-text a:hover{
+    color: #fff;
+    background: #00e0d0;
+}
+
+/*----------- About Css End -----------*/
+/*------------ video css start ---------*/
+#video{
+    
+}
+.video-part{
+    background: url(../Images/video-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 202px;
+    padding-bottom: 250px;
+    position: relative;
+}
+.video-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #311d5e, #09052f);
+    opacity: 0.9;
+}
+.video-info{
+    position: relative;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+.video-icon a{
+    text-decoration: none;
+}
+.video-icon i{
+    font-size: 100px;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.video-icon i:hover{
+    color: #00e0d0;
+}
+.video-text h4{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*------------ video css End ---------*/
+/*------------ expertise css start ---------*/
+/*---- ex-heading css start ----*/
+
+#expertise{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.ex-heading{
+    
+}
+.ex-heading h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #413d4b;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; 
+}
+.ex-heading p{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    color: #2f2d35;
+    letter-spacing: 1px;
+}
+.ex-heading p:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #c6c4c9;
+    transform: translate(-50%);
+}
+/*----- ex-heading css End --*/
+.ex-item{
+    padding-top: 80px;
+}
+.exi-icon{
+    font-size: 50px;
+    color: #30b9cd;
+    padding-bottom: 15px;
+}
+.exi-text h5{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 14px;
+    color: #413d4b;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; 
+}
+.exi-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 13px;
+    color: #413d4b;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*------------ expertise css End ---------*/
+/*------------ Team css Start ---------*/
+#team{
+    background: url(../Images/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+}
+    
+#team:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( #311d5e, #09052f);
+    opacity: 0.9;
+}
+/*------------- team-heading start ---------*/
+.team-heading{
+    position: relative;
+    z-index: 999;
+}
+.team-heading h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; 
+}
+.team-heading p{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.team-heading p:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    bottom: -15px;
+    background: #c6c4c9;
+    transform: translate(-50%);
+}
+/*------------team heading end ---------*/
+/*------------team info start -------*/
+.team-info{
+    position: relative;
+    z-index: 99;
+    margin-top: 47px;
+    border: 1px solid #807c95;
+}
+.team-slider{
+    position: relative;
+    z-index: 999;
+}
+.team-img{
+    position: relative;
+}
+.team-img img{
+    width: 253px;
+    height: 240px;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( #311d5e, #09052f);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.team-img:hover .team-overlay {
+    opacity: 0.9;
+}
+.team-overlay a{
+   text-decoration: none;
+}
+.team-overlay i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+    padding: 3px 4px;
+    color: #fff;
+    font-size: 22px;
+    transition: all linear .3s;
+}
+.team-overlay i:hover {
+    background:#fff;
+    color: #00e0d0;
+    border: none;
+    padding: 4px 6px;
+    box-shadow: 1px 1px 5px 1px;
+}
+.team-text h5{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+.team-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+/*------------team info end ---------*/
+.team-bottom{
+    position: relative;
+    z-index: 999;
+    padding-top: 70px;
+}
+.team-bottom p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 18px;
+}
+.team-bottom a{
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00e0d0;
+    padding: 11px 15px;
+    border: 1px solid #00e0d0;
+    text-decoration: none;                                                                       
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.team-bottom a:hover{                                                         
+    color: #311d5e;
+    background: #fff;
+    border: none;
+}
+/*------------ Team css End -----------*/
+/*------------ work css start ---------*/
+#work{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+/*------------- work heading start ---------*/
+.work-heading{
+    position: relative;
+    z-index: 999;
+}
+.work-heading h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #413d4b;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; 
+}
+.work-heading p{
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    color: #2f2d35;
+    letter-spacing: 1px;
+}
+.work-heading p:after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    bottom: -15px;
+    background: #c6c4c9;
+    transform: translate(-50%);
+}
+/*------------work heading end ---------*/
+/*------------ Collapse start ------*/
+.collapse-item{
+    padding-top: 20px;
+}
+.nav-pills .nav-link {
+	border: 2px solid #dddddd;
+    border-radius: 0;
+    margin: 5px;
+}
+a {
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px; 
+	color: #413d4b;
+	text-decoration: none;
+	background-color: transparent;
+}
+a:hover {
+
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background: #09052f;
+    border: 0;
+}
+/*------------Collapse end ---------*/
+work-img{
+    position: relative;
+}
+.work-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #311d5e, #09052f);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.work-img:hover .work-overlay{
+    opacity: 0.9;
+}
+.work-gell{
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.work-gell a{
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 8px 1px;
+    text-decoration: none;
+}
+.work-gell a:hover{
+    color: #00e0d0;
+    border: 1px solid #00e0d0;
+    box-shadow: 1px 1px 8px 1px;
+}
+.work-btn{
+    padding-top: 70px;
+}
+.work-btn a{
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00e0d0;
+    padding: 11px 15px;
+    margin-left: 10px;
+    border: 1px solid #00e0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.work-btn a:hover{
+    color: #fff;
+    background: #00e0d0;
+}
+/*------------ web develop start ---------*/
+
+/*------------ web develop end -----------*/
+/*------------ work css End -----------*/
+/*------------ peoplesay css  part start ---------*/
+#peoplesay{
+    background: url(../Images/middle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 75px;
+    position: relative;
+}
+#peoplesay:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( #311d5e, #09052f);
+    opacity: 0.9;
+}
+.peoplesay-main{
+    position: relative;
+    z-index: 999;
+}
+.p-img{
+    padding-bottom: 50px; 
+}
+.peoplesay-text p {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+}
+.peoplesay-text h4{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.peoplesay-text h5{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 73px;
+}
+
+/*----------------------------slick dots start---------------*/
+.peoplesay-main.slick-dots {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -73px;
+    transform: translateX(-50%);
+}
+.peoplesay-main.slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.peoplesay-main.slick-dots li button {
+    width: 9px;
+    height: 9px;
+    color: transparent;
+    background: #00e0d0;
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.peoplesay-main.slick-dots li.slick-active button{
+    opacity: 1;
+}
+/*----------------------------slick dots end-----------------*/
+/*------------ peoplesay css part End -----------*/
+/*------------ contact css part End -----------*/
+#contact{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.form-design h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #413d4b;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+.error-msg{
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    margin-bottom: 23px;
+}
+form [type="Name"]
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    width: 498px;
+    height: 43px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 23px;
+}
+form [type="Name"]:hover{
+    border: 1px solid #00e0d0;
+}
+form [type="email"]
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    width: 498px;
+    height: 43px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 23px;
+}
+form [type="email"]:hover{
+    border: 1px solid #00e0d0;
+}
+form [type="subject"]
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    width: 498px;
+    height: 43px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 23px;
+}
+form [type="subject"]:hover{
+    border: 1px solid #00e0d0;
+}
+.form-design textarea
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #413d4b;
+    width: 498px;
+    height: 188px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 23px;
+}
+.form-design textarea:hover{
+    border: 1px solid #00e0d0;
+}
+.btn{
+    font-family: 'Hammersmith One';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00e0d0;
+    padding: 10px 32px;
+    background: #fff;
+    border: 1px solid #00e0d0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    border-radius: 0;
+}
+.btn:hover{
+    color: #fff;
+    background: #00e0d0;
+}
+/*------------- form design end--------*/
+/*------------- client start-----------*/
+.client h4{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    color: #413d4b;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+.client-img{
+    padding-bottom: 47px;
+    transition: all linear .2s;
+}
+.client-img:hover{
+    transform: translateY(-20px);
+}
+
+/*------------- client end-------------*/
+/*------------ contact css part End -----------*/
+/*------------ footer css part End -----------*/
+#footer{
+    background: url(../Images/footer-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+}
+#footer:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, #311d5e, #09052f);
+    opacity: 0.9;
+}
+.footer-main{
+    position: relative;
+    z-index: 999;
+}
+/*-----footer-left start----*/
+.footer-left img{
+    width: 130px;
+    height: 50px;  
+}
+.footer-left p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-right: 16px;
+    padding-top: 20px;
+}
+/*------footer-left end-----*/
+/*------footer-mid start-----*/
+.footer-mid h4{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.fm-icon i{
+    font-size: 20px;
+    color: #fff;
+    transition: all linear .3s;
+}
+.fm-icon i:hover{
+    font-size: 30px;
+    color: #00e0d0;
+}
+
+.fm-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-right: 16px;
+}
+/*------footer-mid end-----*/
+/*------footer-right end-----*/
+.footer-right h4{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+form [type="subscribe"]{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    width: 210px;
+    height: 43px;
+    color: #9992ab;
+    background: rgba(59, 47, 96, 0);
+    border: 1px solid #9992ab;
+}
+form [type="subscribe"]:hover{
+    border: 1px solid #00e0d0;
+}
+.sub-btn{
+    position: relative;
+    background: rgba(153, 146, 171, 0.69);
+    border: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 2px 23px;
+    transition: all linear .3s;
+}
+.sub-btn:hover{
+    background: rgba(0, 224, 208, 0.77);
+}
+.sub-btn i{
+    font-size: 25px;
+    color: #000;
+}
+.icon-f{
+    width: 33px;
+    height: 33px;
+    margin-top: 27px; 
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all linear .1s;
+    text-decoration: none;
+}
+.icon-f:hover{
+    border: 1px solid #00e0d0;
+}
+.icon-f i{
+    font-size: 15px;
+    color: #fff;
+    padding-bottom: 5px;
+    line-height: 30px;
+}
+.icon-f i:hover{
+    color: #00e0d0;
+}
+
+.copyright-left{
+    position: relative;
+    z-index: 999;
+    padding-top: 40px;
+}
+.help a{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .1s;
+}
+.help{
+    text-align: center;
+}
+.help a:hover{
+    color: #00e0d0;
+}
+.terms a{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .1s;
+}
+.terms a:hover{
+    color: #00e0d0;
+}
+.privacy a{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all linear .1s;
+}
+.privacy a:hover{
+    color: #00e0d0;
+}
+.copyright-right h5{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 45px;
+}
+
+/*------footer-right end-----*/
+/*------------ footer css part End -----------*/
